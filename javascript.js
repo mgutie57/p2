@@ -11,3 +11,7 @@ function toggleText() {
   }
 
   
+  function clearReload(){
+    sessionStorage.removeItem("object");
+    window.location.href = '../index.html'
+}
