@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="stylePages.css">
+
+    <title> Page 2a </title>
+</head>
+<body>
+    <h1> 11AM </h1>
+    <h2> You finally wake up!</h2>
+
+    <p> Because you wanted to go back to sleep you turned off all your alarms and missed your doctor's appointment. 
+            But you still have a few things to do today.
+            <br> What would you like to do first?
+
+         <div class="choiceBox">
+
+            <div class="flex-child button button2">
+                <a href = "../pages/page3a.html" > Make some food.</a>
+            </div>
+            <div class="flex-child button button2">
+
+                <a href = "../pages/page3b.html" > Go to the restroom. </a>
+            </div>
+        </div>
+    </p>
+
+    <div class="choiceBox">
+
+        <div class="flex-child button button1" onclick ="clearReload();">Restart Your Day</div>
+
+       <div class="flex-child button button1" onclick="history.back()">Go Back a page</div>
+
+   </div>
+</body>
+</html>
+<script>
+
+    function clearReload(){
+          sessionStorage.removeItem("object");
+          window.location.href = '../index.html'
+      }
+    
+    </script>
+    

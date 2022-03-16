@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="stylePages.css">
+
+    <title>Page Four</title>
+</head>
+<body>
+    <h1> 1PM </h1>
+    <h2> You arrive at the vet.</h2>
+
+    <p>
+        After some inspection it is determined that your dog is alright and will be fine..
+        <br> Unfortunately for you, the bill for today is devastating.
+        <br> What do you do after this?
+        <div class="choiceBox">
+
+            <div class="flex-child button button2">
+                <a href = "../pages/page5a.html" > Drive back home and continue with your day.</a>
+            </div>
+            <div class="flex-child button button2">
+
+                <a href = "../pages/end1.html" > Drive to the nearest park and have some fun with your dog. </a>
+            </div>
+        </div>
+    </p>
+    <div class="choiceBox">
+
+        <div class="flex-child button button1" onclick ="clearReload();">Restart Your Day</div>
+
+       <div class="flex-child button button1" onclick="history.back()">Go Back a page</div>
+
+   </div>
+</body>
+</html>
+<script>
+
+    function clearReload(){
+          sessionStorage.removeItem("object");
+          window.location.href = '../index.html'
+      }
+    
+    </script>
+    

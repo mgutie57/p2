@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="stylePages.css">
+
+    <title>Page 5b</title>
+</head>
+<body>
+    <h1> 1PM </h1>
+    <h2> The pain persists.</h2>
+
+    <p> Your ankle has not gotten better and is still quite painful. What is your next course of action?
+
+         <div class="choiceBox">
+
+            <div class="flex-child button button2">
+                <a href = "../pages/end1.html" >Cancel all plans and go back to bed.</a>
+            </div>
+            <div class="flex-child button button2">
+
+                <a href = "../pages/page6b.html" >Go to urgent care.</a>
+            </div>
+        </div>
+    </p>
+    <div class="choiceBox">
+
+        <div class="flex-child button button1" onclick ="clearReload();">Restart Your Day</div>
+
+       <div class="flex-child button button1" onclick="history.back()">Go Back a page</div>
+
+   </div>
+</body>
+</html>
+<script>
+
+    function clearReload(){
+          sessionStorage.removeItem("object");
+          window.location.href = '../index.html'
+      }
+    
+    </script>
+    

@@ -1,0 +1,106 @@
+
+body {
+    background-color: rgb(37, 45, 66);
+    /*background-color: rgb(58, 22, 18); */
+    margin-left: 25%;
+    margin-right:25%;
+    }
+
+
+/*flex box */
+.choiceBox {
+    display: flex; 
+    width: auto; 
+    margin-left:25%;
+    margin-right:25%;
+    margin-top: 5%;
+    align-self: center;
+}
+    .flex-child {
+        flex: 1; 
+        border: 2px solid rgba(31, 0, 43, 0.5); 
+    }  
+        .flex-child:first-child {
+            margin-right: 15px;}
+
+
+/*text*/
+    h1{
+        font-family: 'Raleway', sans-serif;
+        font-size: 22px;
+        text-align: center;
+        text-decoration: overline;
+        font-weight: bold;
+        color: rgba(88, 94, 119, 0.904); 
+        margin-top: 2%;
+    }
+    h2{
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        color: rgba(111, 129, 175, 0.822);
+        margin-top: 5%;
+    }
+    p{
+        font-family: 'Frank Ruhl Libre', serif;
+        color: rgba(231, 206, 91, 0.85);
+        font-size: 16px;
+        text-align: center;
+        margin-top: 6%;
+        line-height: 1.6;
+    }
+
+    a:link {
+        font-family: 'Frank Ruhl Libre', serif;
+        color: rgba(243, 227, 124, 0.80);
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 1.6;
+        }
+    a:visited {
+        font-family: 'Frank Ruhl Libre', serif;
+        color: rgba(243, 227, 124, 0.80);
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 1.6;
+        }
+
+/*buttons + hover */
+    .button{
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Frank Ruhl Libre', serif;
+        font-size: 12px; 
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    /* bottom options */
+    .button1 {
+        background-color: rgba(41, 49, 71, 0.8); 
+        color: rgba(204, 148, 63, 0.7);   
+        width:auto;
+        height: auto;
+        margin-top: 5%;
+        padding: 15px 15px;  
+       
+    }
+    .button1:hover {
+        background-color: rgba(48, 58, 83, 0.7);
+    }
+    
+    /*choices*/
+    .button2 {
+        background-color: rgba(50, 60, 83, 0.7); 
+        margin-top: 3%;
+        height: auto;
+    }
+    .button2:hover {
+        background-color: rgba(59, 73, 103, 0.7);
+    }
+
+
+

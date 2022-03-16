@@ -1,2 +1,3 @@
 # p2
 This is Project 2: A text-based game
+This game begins with waking up. After that there are varying daily-life choices to be made; as in real life, some of our choices end in another "normal" day, while other choices may lead us to a day of pain or demise. There are various ends with some choices leading to the same consequence no matter what, and some others leading to different endings. Some endings are similar in their normality while others are similar in their cruel twists. The color palette used throughout was derived and inspired from a picture of the sky near dawn- the idea to use this color scheme was from the beginning of the game which takes place upon waking up.

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="stylePages.css">
+
+    <title>Page six</title>
+</head>
+<body>
+    <h1> 11PM</h1>
+    <h2> An End.</h2>
+
+    <p>
+        It is time to go to sleep- tomorrow awaits.
+    </p>
+    
+    <div class="choiceBox">
+
+        <div class="flex-child button button1" onclick ="clearReload();">Restart Your Day</div>
+
+       <div class="flex-child button button1" onclick="history.back()">Go Back a page</div>
+
+   </div>
+   
+</body>
+</html>
+
+<script>
+
+function clearReload(){
+     sessionStorage.removeItem("object");
+     window.location.href = '../index.html'
+ }
+
+</script>

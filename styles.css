@@ -1,0 +1,81 @@
+
+body {
+    background-color: rgb(37, 45, 66);
+    /*background-color: rgb(58, 22, 18); */
+    margin-left: 20%;
+    margin-right:20%;
+    }
+
+/*text*/
+    h1{
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 40px;
+        
+    }
+    
+    /*expanded text decor*/
+    p{
+        font-family: 'Frank Ruhl Libre', serif;
+        color: rgb(240, 227, 168);
+        font-size: 15px;
+        text-align: center;
+        margin-top: 4%;
+    }
+
+
+
+/*buttons + hover */
+    .button{
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-family: 'Frank Ruhl Libre', serif;
+        font-size: 12px; 
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    /*click for instructions button */
+    .button3 {
+        background-color: rgba(37, 45, 66, 0.8); 
+        margin-top: 10%; 
+        color: rgb(85, 100, 123);
+    }
+    .button3:hover {
+        background-color: rgba(44, 53, 75, 0.5);
+    }
+
+/*title */
+    h1 {
+        overflow: hidden;
+    }
+    .old-text, .new-text {
+        display: block;
+        overflow: hidden;
+        transition: all 500ms ease-in-out;
+    }
+    .old-text {
+        color: rgb(243, 227, 124);
+        height: auto;
+        opacity: 1;
+        width: auto;
+    }
+    .new-text {
+        color: rgb(239, 200, 26);
+        height: 0;
+        opacity: 0;
+        width: 0;
+    }
+    .titleTxt:hover .old-text {
+        height: 0px;
+        opacity: 0;
+        width: 0px;
+    }
+    .titleTxt:hover .new-text {
+        height: auto;
+        opacity: 1;
+        width: auto;
+    }

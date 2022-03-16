@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2: A Text-Based Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  
+
+<style>
+
+    h1{
+        
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25%;
+        margin-bottom: 15%;
+    }
+
+    .instructions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: content-box; 
+    }
+
+    button{
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-bottom: 10%;
+    }
+
+    body {
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+</style>
+</head>
+
+<body>
+
+    <script src="javascript.js"></script>
+
+    <div class="titleTxt">
+        <h1 class="title" > 
+              <div class="old-text">Good Morning.</div>
+              <div class ="new-text" onclick="window.location.href = 'pages/page1.html';"value="click to begin"> Click to begin.</div>
+           </h1>
+      </div>  
+
+        <p  id='instructions'  style="color:rgb(148, 139, 79); display: none">
+                As you progress through this game simply press on your desired
+            option to continue or use any of the available buttons to go back a step or restart.</p> 
+        <button class='button button3' onclick="toggleText()"> Click for instructions</button>
+           
+   
+</body>
+
+</html>

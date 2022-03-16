@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2: A Text-Based Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="stylePages.css">
+
+    <title>Page 9</title>
+
+</head>
+
+<body>
+
+    <script src="javascript.js"></script>
+    <h1> 5:30PM </h1>
+    <h2>A twist!</h2> 
+
+    <p>
+        The police arrive and you explain the situation. There is no way that you brought the peanut butter home
+        and you are concerned about your safety. They search your home and find the serial killer
+        that has been on the news hidden in your pantry. They arrest him and leave you to deal with
+        the traumas of your day. What do you do next?
+        <div class="choiceBox">
+
+            <div class="flex-child button button2">
+                <a href = "end2.html" > Go for a jog to relieve some stress. </a>
+            </div>
+            <div class="flex-child button button2">
+                <a href = "end1.html" > Go to bed for the rest of the day.</a>
+            </div>
+    </div>
+
+    </p>
+    
+
+    <div class="choiceBox">
+
+         <div class="flex-child button button1" onclick ="clearReload();">Restart Your Day</div>
+
+        <div class="flex-child button button1" onclick="history.back()">Go Back a page</div>
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+
+function clearReload(){
+      sessionStorage.removeItem("object");
+      window.location.href = '../index.html'
+  }
+
+</script>

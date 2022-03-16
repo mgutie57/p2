@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2: A Text-Based Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="stylePages.css">
+
+    <title>Page 8</title>
+</head>
+
+<body>
+
+    <script src="javascript.js"></script>
+    <h1> 5PM </h1>
+    <h2> Woah what?! </h2>
+
+    <p>
+        After leaving the peanut butter in the parking lot you did not really think about it again.
+        <br> You go to make dinner and notice the dented, dirty jar of peanut butter lying on your kitchen floor.
+        What do you do?
+
+        <div class="choiceBox">
+
+            <div class="flex-child button button2">
+                <a href = "page9.html" >  Call the police due to suspicions of an intruder. </a>
+            </div>
+            <div class="flex-child button button2">
+                <a href = "end3.html" > Reminisce about the Chef Boyardee rolling can commercials.</a>
+            </div>
+    </div>
+    </p>
+
+    <div class="choiceBox">
+
+         <div class="flex-child button button1" onclick ="clearReload();">Restart Your Day</div>
+
+        <div class="flex-child button button1" onclick="history.back()">Go Back a page</div>
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+
+function clearReload(){
+      sessionStorage.removeItem("object");
+      window.location.href = '../index.html'
+  }
+
+</script>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="stylePages.css">
+
+    <title>Page 3a </title>
+</head>
+<body>
+    <h1> Noon </h1>
+    <h2> Oh no!</h2>
+
+    <p> Unfortunately you turned your back a second to long and your dog devoured what you made. <br>
+        You are unsure if the food is toxic to dogs. What is your next course of action?
+
+         <div class="choiceBox">
+
+            <div class="flex-child button button2" > 
+                <a href = "../pages/page4a.html" > Immediately take the dog to the vet.</a>
+            </div>
+            <div class="flex-child button button2">
+
+                <a href = "../pages/page5.html" > Clean up the remaining mess- he seems fine.</a>
+            </div>
+        </div>
+    </p>
+    <div class="choiceBox">
+
+        <div class="flex-child button button1" onclick ="clearReload();">Restart Your Day</div>
+
+       <div class="flex-child button button1" onclick="history.back()">Go Back a page</div>
+
+   </div>
+</body>
+</html>
+<script>
+
+    function clearReload(){
+          sessionStorage.removeItem("object");
+          window.location.href = '../index.html'
+      }
+    
+    </script>
+    

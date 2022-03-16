@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2: A Text-Based Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="stylePages.css">
+
+    <title>Page 7a </title>
+
+</head>
+
+<body>
+
+    <script src="javascript.js"></script>
+    <h1> 3:30PM </h1>
+    <h2> In the parking lot.. </h2>
+
+    <p>
+        As you are leaving the store your peanut butter falls out the bag and rolls into the parkng lot 
+        <br> What do you do next?
+        <div class="choiceBox">
+
+            <div class="flex-child button button2">
+                <a href = "end2.html" >  Chase after it. </a>
+            </div>
+            <div class="flex-child button button2">
+                <a href = "page8.html" > Leave it.</a>
+            </div>
+    </div>
+    </p>
+
+    <div class="choiceBox">
+
+         <div class="flex-child button button1" onclick ="clearReload();">Restart Your Day</div>
+
+        <div class="flex-child button button1" onclick="history.back()">Go Back a page</div>
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+
+function clearReload(){
+      sessionStorage.removeItem("object");
+      window.location.href = '../index.html'
+  }
+
+</script>
